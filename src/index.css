@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+  
+  body {
+    background-color: #060709;
+    color: #e5e7eb;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom glowing and glassmorphic styles */
+.glass-panel {
+  background: rgba(14, 17, 23, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-panel-orange {
+  background: rgba(255, 85, 0, 0.04);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 85, 0, 0.25);
+}
+
+.glow-orange {
+  box-shadow: 0 0 35px -5px rgba(255, 85, 0, 0.4);
+}
+
+.glow-orange-lg {
+  box-shadow: 0 0 70px -10px rgba(255, 85, 0, 0.5);
+}
+
+.text-gradient-orange {
+  background: linear-gradient(135deg, #ffffff 30%, #ff8c42 70%, #ff5500 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.solar-eclipse-glow {
+  background: radial-gradient(circle at 50% 100%, #ff5500 0%, #ff7700 25%, rgba(255, 85, 0, 0.15) 55%, transparent 75%);
+}
+
+.spotlight-beam {
+  background: linear-gradient(180deg, rgba(255, 85, 0, 0.8) 0%, rgba(255, 110, 20, 0.3) 45%, rgba(255, 85, 0, 0.02) 100%);
+  clip-path: polygon(30% 0%, 70% 0%, 100% 100%, 0% 100%);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07090e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f2533;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff5500;
+}
