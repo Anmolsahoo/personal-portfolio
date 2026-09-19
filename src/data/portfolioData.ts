@@ -35,13 +35,13 @@ export const portfolioData = {
   brand: {
     name: "Anmol Sahoo",
     logoText: "ANMOL SAHOO",
-    tagline: "Full-Stack AI Engineer & Creative Technologist",
+    tagline: "Full-Stack Developer & Software Engineer",
     developerName: "Anmol Sahoo",
-    role: "Full-Stack AI Engineer & Creative Developer",
-    statusBadge: "Whats New: 2026 Portfolio v2.0",
-    heroHeadline: "Intelligent Solutions Powered by AI.",
-    heroSubtitle: "Gain clarity and harness the power of modern engineering with Anmol Sahoo. Crafting intuitive dashboards, scalable distributed backends, and high-impact AI architectures.",
-    ctaPrimary: "Contact Us",
+    role: "Full-Stack Developer & Software Engineer",
+    statusBadge: "Available for Opportunities • 2026",
+    heroHeadline: "Building reliable web systems, business software & scalable backends.",
+    heroSubtitle: "Full-Stack Developer with experience building production web applications, internal business software (CRMs, ERPs, Dashboards), and AI-integrated workflows using Python, Django, and React.",
+    ctaPrimary: "Get in Touch",
     ctaSecondary: "Explore Projects",
   },
   
@@ -49,7 +49,7 @@ export const portfolioData = {
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
     { label: "Projects", href: "/projects" },
-    { label: "Contact Us", href: "/contact" },
+    { label: "Contact", href: "/contact" },
   ],
 
   about: {
@@ -91,227 +91,56 @@ export const portfolioData = {
     ]
   },
 
-  stats: {
-    totalUsers: "72,350",
-    totalUsersGrowth: "+25.4%",
-    revenue: "29.4%",
-    avgClickRate: "56.8%",
-    purchases: "92,313",
-    monthlyExpenses: [
-      { month: "Jan", value: 35 },
-      { month: "Feb", value: 28 },
-      { month: "Mar", value: 55 },
-      { month: "Apr", value: 40 },
-      { month: "May", value: 85, highlighted: true },
-      { month: "Jun", value: 45 },
-      { month: "Jul", value: 65 },
-      { month: "Aug", value: 30 },
-      { month: "Sep", value: 75, highlighted: true },
-      { month: "Oct", value: 50 },
-      { month: "Nov", value: 60 },
-      { month: "Dec", value: 90, highlighted: true },
-    ],
-    importers: [
-      { name: "Huse", users: "12 users", status: "Active" },
-      { name: "Pento", users: "3 users", status: "Active" },
-      { name: "Border", users: "Users", status: "Connected" },
-    ]
-  },
-
-  partners: [
-    { name: "Trace", icon: "Boxes" },
-    { name: "Volume", icon: "Disc" },
-    { name: "Clues", icon: "Compass" },
-    { name: "Rise", icon: "TrendingUp" },
-    { name: "Cloud", icon: "CloudLightning" },
-    { name: "Cyber", icon: "ShieldCheck" },
-    { name: "Nexus", icon: "Cpu" },
-    { name: "Vertex", icon: "Layers" },
-  ],
-
-  bentoFeatures: {
-    balance: {
-      title: "Balance",
-      description: "Real-time balance monitoring and active project liquidity with automated budget alerts.",
-      activePrototype: "Create a working prototype",
-      status: "30-20 Tracking every micro-design",
-    },
-    users: {
-      title: "Users",
-      description: "Scale from prototype to millions without rewriting infrastructure or breaking state.",
-      count: "72,350",
-      growth: "+9.8%",
-    },
-    aiSessions: {
-      title: "AI Sessions",
-      description: "Smart autonomous agents orchestrating tasks, automated tests, and code generation.",
-      items: [
-        { label: "Personal", active: true },
-        { label: "Issues", active: false },
-        { label: "Active", active: true },
-        { label: "Backlog", active: false },
-        { label: "Projects", active: true },
-      ]
-    },
-    spotlight: {
-      title: "Create",
-      description: "Harness generative AI to build bespoke components, API clients, and responsive viewports instantly.",
-      badge: "AI Powered v2.4",
-    }
-  },
-
-  detailedFeatures: [
-    {
-      badge: "SaaS Management",
-      title: "Top Management, to help you see the bigger picture",
-      description: "Eliminate fragmentation across your product roadmap. Seamlessly orchestrate code quality, design fidelity, and automated pipelines with granular insight at every stage.",
-      linkText: "See Doc",
-      linkHref: "/projects",
-      points: [
-        "Customizable layouts for efficient coding",
-        "Font preferences to match your style",
-        "Create multiple profiles for versatility",
-      ],
-      reverse: false,
-    },
-    {
-      badge: "High Performance",
-      title: "Helping you with fast-reading charts on the go",
-      description: "Live visual telemetry built directly into your workflow. Monitor microsecond latency, distributed traces, and conversion metrics on desktop and mobile without performance penalties.",
-      linkText: "See Doc",
-      linkHref: "/projects",
-      points: [
-        "Interactive real-time SVG charting engine",
-        "Offline synchronization and optimistic UI",
-        "Granular role-based privacy and team permissions",
-      ],
-      reverse: true,
-    }
-  ],
-
   pricingPlans: [
     {
       id: "starter",
-      name: "Starter",
-      subtitle: "Perfect for small businesses that need a professional digital presence.",
+      name: "Starter Website",
+      subtitle: "Professional web presence for businesses and creators requiring speed and responsiveness.",
       price: "₹10K+",
       features: [
         "Business / Portfolio Website",
-        "Responsive design",
+        "Fully responsive layout",
         "Contact & enquiry forms",
-        "WhatsApp integration",
-        "Basic admin functionality",
-        "Deployment support",
+        "WhatsApp / social integration",
+        "Basic admin panel",
+        "Production deployment support",
       ]
     },
     {
       id: "business",
-      name: "Business",
-      subtitle: "For businesses that need custom software to manage their daily operations.",
+      name: "Custom Web Application",
+      subtitle: "Custom operational software designed for daily business workflows and data management.",
       price: "₹25K+",
       popular: true,
       features: [
-        "Custom Web Application",
-        "CRM / Lead Management",
-        "Inventory Management",
-        "Admin Dashboard",
-        "REST API integration",
-        "Excel / PDF reports",
-        "WhatsApp / notification integration",
-        "Deployment & basic support",
+        "Custom Web Application (React + Python/Django)",
+        "CRM & Lead Tracking",
+        "Inventory & Asset Management",
+        "Role-based Admin Dashboard",
+        "REST API integrations",
+        "Automated Excel / PDF reports",
+        "Notification & webhook integration",
+        "Deployment, testing & support",
       ]
     },
     {
       id: "ai-scale",
-      name: "AI & Scale",
-      subtitle: "For businesses looking for advanced automation, SaaS products and AI-powered solutions.",
+      name: "Full-Stack & AI Systems",
+      subtitle: "For businesses looking for advanced automation, intelligent chatbots, and custom SaaS platforms.",
       price: "₹50K+",
       features: [
-        "SaaS Platform Development",
-        "AI Chatbot",
-        "RAG / AI Knowledge Assistant",
-        "Business Automation",
-        "Advanced CRM / workflows",
-        "AI & API integrations",
-        "Cloud deployment",
-        "Post-launch support",
+        "Full-Stack SaaS Platform Development",
+        "AI Chatbot & Knowledge Assistant (RAG)",
+        "Workflow Automation & Data Pipelines",
+        "Advanced Multi-tenant Database Schema",
+        "Custom Third-party API Integrations",
+        "Cloud Deployment & Monitoring",
+        "Post-launch technical support",
       ]
     }
   ],
 
   projects: [
-    {
-      id: "luxury-restaurant",
-      title: "Luxury Restaurant Website",
-      category: "Business Website",
-      filterCategories: ["Websites"],
-      description: "A premium restaurant website featuring menu presentation, chef profiles, gallery, reservations, customer reviews and contact sections.",
-      tags: ["HTML", "CSS", "JavaScript", "Responsive UI"],
-      gradient: "from-amber-500/30 via-orange-500/15 to-transparent",
-      accentColor: "#ff5500",
-      liveUrl: "https://6a3cb2d220e0516f0142ec7d--chipper-nasturtium-be85c1.netlify.app/",
-      featured: true
-    },
-    {
-      id: "premium-camera-store",
-      title: "Premium Camera Store",
-      category: "E-Commerce Website",
-      filterCategories: ["E-Commerce", "Websites"],
-      description: "A modern camera e-commerce experience with product categories, product listings, featured products, brands, reviews and promotional sections.",
-      tags: ["React", "JavaScript", "Responsive UI", "E-Commerce UI"],
-      gradient: "from-blue-500/30 via-indigo-500/15 to-transparent",
-      accentColor: "#3b82f6",
-      liveUrl: "https://6a3d03477ce79400da070805--glittery-souffle-62965a.netlify.app/",
-      featured: true
-    },
-    {
-      id: "library-management-system-1",
-      title: "Library Management System",
-      category: "Business Management Software",
-      filterCategories: ["Business Software", "Management Systems", "Dashboards"],
-      description: "A full library management system for managing students, books, inventory, issue/return transactions, fines, reports and analytics.",
-      tags: ["React", "JavaScript", "Database", "Dashboard", "REST API"],
-      gradient: "from-emerald-500/30 via-teal-500/15 to-transparent",
-      accentColor: "#10b981",
-      liveUrl: "https://6a45278161a99419250c54e9--dazzling-caramel-9d2218.netlify.app/#dashboard",
-      featured: true
-    },
-    {
-      id: "library-management-platform",
-      title: "Library Management Platform",
-      category: "Management System",
-      filterCategories: ["Management Systems", "Dashboards", "Business Software"],
-      description: "A modern library management application focused on student registration, book inventory, issue and return workflows, fine management, reports and analytics.",
-      tags: ["React", "Database", "Dashboard", "CRUD", "Analytics"],
-      gradient: "from-cyan-500/30 via-blue-500/15 to-transparent",
-      accentColor: "#06b6d4",
-      liveUrl: "https://library-30k3eorcl-anmolsahoos-projects.vercel.app/",
-      featured: true
-    },
-    {
-      id: "library-management-advanced",
-      title: "Library Management — Advanced Version",
-      category: "Business Management Software",
-      filterCategories: ["Business Software", "Management Systems", "Dashboards"],
-      description: "An advanced library management interface with administration, student records, book catalogue, transactions, reports, analytics and system settings.",
-      tags: ["React", "Database", "Admin Dashboard", "Analytics"],
-      gradient: "from-rose-500/30 via-orange-500/15 to-transparent",
-      accentColor: "#f43f5e",
-      liveUrl: "https://library-1pu491ier-anmolsahoos-projects.vercel.app/",
-      featured: true
-    },
-    {
-      id: "college-admin-management",
-      title: "College Admin Management",
-      category: "Full-Stack Application",
-      filterCategories: ["Business Software", "Management Systems", "Dashboards"],
-      description: "A production-style college admin management application demonstrating student management, academic operations, records and administrative workflows.",
-      tags: ["Full-Stack", "Database", "REST API", "Admin Dashboard"],
-      gradient: "from-violet-500/30 via-indigo-500/15 to-transparent",
-      accentColor: "#8b5cf6",
-      liveUrl: "https://library-2-molm.onrender.com/",
-      featured: true
-    },
     {
       id: "clinic-management-system",
       title: "Clinic & Patient Care Management",
@@ -322,6 +151,7 @@ export const portfolioData = {
       gradient: "from-teal-500/30 via-emerald-500/15 to-transparent",
       accentColor: "#10b981",
       liveUrl: "/demos/clinic",
+      github: "https://github.com/Anmolsahoo",
       featured: true
     },
     {
@@ -334,6 +164,7 @@ export const portfolioData = {
       gradient: "from-blue-500/30 via-indigo-500/15 to-transparent",
       accentColor: "#3b82f6",
       liveUrl: "/demos/school",
+      github: "https://github.com/Anmolsahoo",
       featured: true
     },
     {
@@ -346,33 +177,86 @@ export const portfolioData = {
       gradient: "from-amber-500/30 via-orange-500/15 to-transparent",
       accentColor: "#ff5500",
       liveUrl: "/demos/gym",
+      github: "https://github.com/Anmolsahoo",
+      featured: true
+    },
+    {
+      id: "library-management-system-1",
+      title: "Full-Stack Library & Records Portal",
+      category: "Business Management Software",
+      filterCategories: ["Business Software", "Management Systems", "Dashboards"],
+      description: "A full library management platform for managing student accounts, catalogue indexing, issue/return transactions, automated fine calculations, reports, and analytics.",
+      tags: ["React", "JavaScript", "Database", "Dashboard", "REST API"],
+      gradient: "from-emerald-500/30 via-teal-500/15 to-transparent",
+      accentColor: "#10b981",
+      liveUrl: "https://library-1pu491ier-anmolsahoos-projects.vercel.app/",
+      github: "https://github.com/Anmolsahoo",
+      featured: true
+    },
+    {
+      id: "college-admin-management",
+      title: "College Admin & Academic Operations",
+      category: "Full-Stack Application",
+      filterCategories: ["Business Software", "Management Systems", "Dashboards"],
+      description: "A production-style college administration application demonstrating student lifecycle management, academic departments, recordkeeping, and administrative workflows.",
+      tags: ["Full-Stack", "Python", "Django", "Database", "REST API"],
+      gradient: "from-violet-500/30 via-indigo-500/15 to-transparent",
+      accentColor: "#8b5cf6",
+      liveUrl: "https://library-2-molm.onrender.com/",
+      github: "https://github.com/Anmolsahoo",
+      featured: true
+    },
+    {
+      id: "luxury-restaurant",
+      title: "Luxury Restaurant Experience",
+      category: "Business Website",
+      filterCategories: ["Websites"],
+      description: "A responsive restaurant website featuring interactive menu exploration, chef stories, reservations, customer testimonials, and contact forms.",
+      tags: ["HTML", "CSS", "JavaScript", "Responsive UI"],
+      gradient: "from-amber-500/30 via-orange-500/15 to-transparent",
+      accentColor: "#ff5500",
+      liveUrl: "https://6a3cb2d220e0516f0142ec7d--chipper-nasturtium-be85c1.netlify.app/",
+      github: "https://github.com/Anmolsahoo",
+      featured: true
+    },
+    {
+      id: "premium-camera-store",
+      title: "Camera & Optics E-Commerce",
+      category: "E-Commerce Website",
+      filterCategories: ["E-Commerce", "Websites"],
+      description: "A sleek e-commerce interface showcasing cameras, lenses, and gear with category filters, product details, brand spotlights, and a responsive checkout preview.",
+      tags: ["React", "JavaScript", "Responsive UI", "E-Commerce UI"],
+      gradient: "from-blue-500/30 via-indigo-500/15 to-transparent",
+      accentColor: "#3b82f6",
+      liveUrl: "https://6a3d03477ce79400da070805--glittery-souffle-62965a.netlify.app/",
+      github: "https://github.com/Anmolsahoo",
       featured: true
     }
   ],
 
   contact: {
-    email: "anmol.sahoo@example.com",
-    location: "Bhubaneswar / Remote Worldwide",
-    availability: "Available for freelance projects, technical consulting & full-time opportunities",
+    email: "bitunanmolsahoo@gmail.com",
+    location: "Bhubaneswar, Odisha, India / Remote Worldwide",
+    availability: "Available for full-time software engineering roles, technical consulting & freelance development",
     responseTime: "Usually responds within 12 hours",
     faqs: [
       {
-        q: "What types of projects do you take on?",
-        a: "I specialize in end-to-end full stack web applications, AI-integrated workflows, high-performance design systems, and cloud infrastructure."
+        q: "What types of projects do you build?",
+        a: "I build end-to-end full-stack web applications, business management software (CRMs, inventory systems, operational portals), REST APIs with Python/Django/FastAPI, modern React frontends, and AI-assisted automation tools."
       },
       {
         q: "What is your typical turnaround time?",
-        a: "For prototypes and MVPs, delivery typically spans 1–3 weeks. Larger enterprise applications and multi-tenant architectures are planned in agile 2-week sprints."
+        a: "For prototypes and MVPs, delivery is typically 1–2 weeks. For larger web platforms, milestones are structured in clear weekly sprints with continuous staging access."
       },
       {
-        q: "How do you handle communication and updates?",
-        a: "I work asynchronously and synchronously via Slack, Discord, GitHub, and scheduled video syncs, providing staging links and transparent milestone demos."
+        q: "How do you handle communication and collaboration?",
+        a: "I communicate transparently via GitHub, email, Slack, Discord, and scheduled video calls, sharing staging deployments so you can test features as they are built."
       }
     ]
   },
 
   socialLinks: [
-    { name: "GitHub", url: "https://github.com", icon: "Github" },
+    { name: "GitHub", url: "https://github.com/Anmolsahoo", icon: "Github" },
     { name: "LinkedIn", url: "https://linkedin.com", icon: "Linkedin" },
     { name: "Twitter", url: "https://twitter.com", icon: "Twitter" },
     { name: "Instagram", url: "https://instagram.com", icon: "Instagram" },

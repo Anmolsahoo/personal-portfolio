@@ -58,7 +58,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose, def
             </div>
             <h3 className="text-2xl font-bold text-white">Inquiry Received!</h3>
             <p className="text-sm text-gray-400 max-w-xs mx-auto">
-              Thank you for reaching out. We will review your project requirements and connect within 24 hours.
+              Thank you for reaching out! I will review your project requirements and connect within 12-24 hours.
             </p>
           </div>
         ) : (

@@ -31,8 +31,8 @@ import {
 
 interface SkillItem {
   name: string;
-  level: number; // 0-100
-  tier: 'Expert' | 'Advanced' | 'Proficient';
+  level?: number; // optional
+  tier: 'Core Stack' | 'Advanced' | 'Proficient' | 'Expert' | 'Production';
   icon?: string;
 }
 
@@ -275,57 +275,57 @@ export const DashboardMockup: React.FC = () => {
             {/* KPI 1 */}
             <div className="p-3.5 sm:p-4 rounded-xl bg-[#121520]/80 border border-white/[0.06] hover:border-[#ff5500]/30 transition-all duration-300">
               <div className="flex items-center justify-between text-gray-400 mb-2">
-                <span className="text-[11px] uppercase tracking-wider">PROGRAMMING &amp; AI</span>
-                <Brain className="w-3.5 h-3.5 text-[#ff7722]" />
+                <span className="text-[11px] uppercase tracking-wider font-semibold">CORE LANGUAGES</span>
+                <Terminal className="w-3.5 h-3.5 text-[#ff7722]" />
               </div>
-              <div className="text-lg sm:text-2xl font-bold text-white">
-                12 Frameworks
+              <div className="text-base sm:text-xl font-bold text-white">
+                Python &bull; SQL &bull; JS
               </div>
-              <div className="mt-2 h-1 w-full bg-white/[0.05] rounded-full overflow-hidden">
-                <div className="h-full bg-gradient-to-r from-[#ff5500] to-[#ffaa00] w-[90%] rounded-full"></div>
-              </div>
+              <p className="mt-2 text-[11px] text-gray-400 font-mono">
+                Backend logic & data scripting
+              </p>
             </div>
 
             {/* KPI 2 */}
             <div className="p-3.5 sm:p-4 rounded-xl bg-[#121520]/80 border border-white/[0.06] hover:border-[#ff5500]/30 transition-all duration-300">
               <div className="flex items-center justify-between text-gray-400 mb-2">
-                <span className="text-[11px] uppercase tracking-wider">FULL-STACK SYSTEMS</span>
+                <span className="text-[11px] uppercase tracking-wider font-semibold">WEB ARCHITECTURES</span>
                 <Server className="w-3.5 h-3.5 text-emerald-400" />
               </div>
-              <div className="text-lg sm:text-2xl font-bold text-white">
-                10 Core Stacks
+              <div className="text-base sm:text-xl font-bold text-white">
+                Django &bull; FastAPI &bull; React
               </div>
-              <div className="mt-2 h-1 w-full bg-white/[0.05] rounded-full overflow-hidden">
-                <div className="h-full bg-gradient-to-r from-emerald-500 to-teal-400 w-[88%] rounded-full"></div>
-              </div>
+              <p className="mt-2 text-[11px] text-gray-400 font-mono">
+                Production-tested REST APIs
+              </p>
             </div>
 
             {/* KPI 3 */}
             <div className="p-3.5 sm:p-4 rounded-xl bg-[#121520]/80 border border-white/[0.06] hover:border-[#ff5500]/30 transition-all duration-300">
               <div className="flex items-center justify-between text-gray-400 mb-2">
-                <span className="text-[11px] uppercase tracking-wider">DATABASES &amp; BI</span>
+                <span className="text-[11px] uppercase tracking-wider font-semibold">DATA & STORAGE</span>
                 <Database className="w-3.5 h-3.5 text-blue-400" />
               </div>
-              <div className="text-lg sm:text-2xl font-bold text-white">
-                8 Data Engines
+              <div className="text-base sm:text-xl font-bold text-white">
+                PostgreSQL &bull; MySQL
               </div>
-              <div className="mt-2 h-1 w-full bg-white/[0.05] rounded-full overflow-hidden">
-                <div className="h-full bg-gradient-to-r from-blue-500 to-cyan-400 w-[85%] rounded-full"></div>
-              </div>
+              <p className="mt-2 text-[11px] text-gray-400 font-mono">
+                Schema design & indexing
+              </p>
             </div>
 
             {/* KPI 4 */}
             <div className="p-3.5 sm:p-4 rounded-xl bg-[#121520]/80 border border-white/[0.06] hover:border-[#ff5500]/30 transition-all duration-300">
               <div className="flex items-center justify-between text-gray-400 mb-2">
-                <span className="text-[11px] uppercase tracking-wider">DEVOPS &amp; TOOLS</span>
+                <span className="text-[11px] uppercase tracking-wider font-semibold">TOOLING & CLOUD</span>
                 <GitBranch className="w-3.5 h-3.5 text-[#ff7722]" />
               </div>
-              <div className="text-lg sm:text-2xl font-bold text-white">
-                8 Toolchains
+              <div className="text-base sm:text-xl font-bold text-white">
+                Docker &bull; Git &bull; Vercel
               </div>
-              <div className="mt-2 h-1 w-full bg-white/[0.05] rounded-full overflow-hidden">
-                <div className="h-full bg-gradient-to-r from-[#ff5500] to-rose-500 w-[92%] rounded-full"></div>
-              </div>
+              <p className="mt-2 text-[11px] text-gray-400 font-mono">
+                Automated deploys & CI/CD
+              </p>
             </div>
 
           </div>
@@ -354,43 +354,28 @@ export const DashboardMockup: React.FC = () => {
                   </div>
 
                   {/* Skills List in Category */}
-                  <div className="space-y-2.5">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {category.skills.map((skill) => (
                       <div
                         key={skill.name}
                         onClick={() => setSelectedSkill(skill.name)}
-                        className="p-2.5 rounded-xl bg-[#141825]/80 hover:bg-[#181d2e] border border-white/[0.04] hover:border-[#ff5500]/30 transition-all duration-200 cursor-pointer"
+                        className="p-2.5 rounded-xl bg-[#141825]/80 hover:bg-[#181d2e] border border-white/[0.04] hover:border-[#ff5500]/30 transition-all duration-200 cursor-default flex items-center justify-between"
                       >
-                        <div className="flex items-center justify-between mb-1.5">
-                          <span className="text-xs font-semibold text-gray-200 group-hover:text-white flex items-center gap-1.5">
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#ff5500]/70"></span>
-                            {skill.name}
-                          </span>
-                          <div className="flex items-center gap-2">
-                            <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-white/[0.04] text-gray-400">
-                              {skill.tier}
-                            </span>
-                            <span className="text-[11px] font-mono font-bold text-[#ff7722]">
-                              {skill.level}%
-                            </span>
-                          </div>
-                        </div>
-
-                        {/* Subtle progress indicator */}
-                        <div className="h-1 w-full bg-white/[0.05] rounded-full overflow-hidden">
-                          <div
-                            style={{ width: `${skill.level}%` }}
-                            className="h-full bg-gradient-to-r from-[#ff5500] to-[#ffaa00] rounded-full transition-all duration-500"
-                          ></div>
-                        </div>
+                        <span className="text-xs font-semibold text-gray-200 group-hover:text-white flex items-center gap-1.5">
+                          <span className="w-1.5 h-1.5 rounded-full bg-[#ff5500]/80"></span>
+                          {skill.name}
+                        </span>
+                        <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-white/[0.04] text-[#ff8833] border border-white/[0.05]">
+                          {skill.tier}
+                        </span>
                       </div>
                     ))}
                   </div>
                 </div>
 
                 <div className="mt-3.5 pt-2.5 border-t border-white/[0.04] flex items-center justify-between text-[11px] text-gray-500">
-                  <span>{category.skills.length} Competencies</span>
-                  <span className="text-gray-400 font-mono text-[10px]">Verified Production</span>
+                  <span>{category.skills.length} Technologies</span>
+                  <span className="text-gray-400 font-mono text-[10px]">Applied in Production</span>
                 </div>
               </div>
             ))}
@@ -400,11 +385,11 @@ export const DashboardMockup: React.FC = () => {
           <div className="p-4 rounded-2xl bg-[#0f121b] border border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-400">
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              <span>All 38 technologies benchmarked against modern production standards</span>
+              <span>Full-stack architecture, clean REST APIs, and production database design</span>
             </div>
             <div className="flex items-center gap-3 font-mono text-[11px]">
-              <span className="text-gray-300">Continuous Integration Ready</span>
-              <span className="text-[#ff6a00] font-bold">100% SLA</span>
+              <span className="text-gray-300">Experience at</span>
+              <span className="text-[#ff6a00] font-bold">Oditech &amp; MSC HireTech</span>
             </div>
           </div>
 

@@ -28,7 +28,7 @@ export const Footer: React.FC = () => {
 
             <div className="pt-2 flex items-center gap-3">
               <a
-                href="https://github.com"
+                href="https://github.com/Anmolsahoo"
                 target="_blank"
                 rel="noreferrer"
                 className="w-8 h-8 rounded-full bg-white/[0.05] hover:bg-[#ff5500] hover:text-white flex items-center justify-center text-gray-400 transition-colors"
@@ -75,7 +75,7 @@ export const Footer: React.FC = () => {
               <li><Link to="/" className="hover:text-white transition-colors">Home</Link></li>
               <li><Link to="/about" className="hover:text-white transition-colors">About Anmol</Link></li>
               <li><Link to="/projects" className="hover:text-white transition-colors">Projects & Architecture</Link></li>
-              <li><Link to="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
+              <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
 
@@ -86,7 +86,7 @@ export const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-2 text-xs sm:text-sm">
               <li>
-                <a href="https://github.com" target="_blank" rel="noreferrer" className="flex items-center gap-1 hover:text-white transition-colors">
+                <a href="https://github.com/Anmolsahoo" target="_blank" rel="noreferrer" className="flex items-center gap-1 hover:text-white transition-colors">
                   <span>GitHub Profile</span>
                   <ArrowUpRight className="w-3 h-3 text-gray-500" />
                 </a>

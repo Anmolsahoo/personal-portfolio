@@ -64,21 +64,21 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
               </span>
               <span className="text-xs font-semibold tracking-wider text-gray-200 uppercase font-mono">
-                AVAILABLE FOR FREELANCE • 2026
+                AVAILABLE FOR OPPORTUNITIES & FREELANCE • 2026
               </span>
             </div>
 
             {/* Main Heading */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.08]">
-              I build modern websites, web apps, CRM & SaaS platforms, and<br />
+              Full-Stack Developer crafting reliable web apps, business systems &<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#ffe6db] to-[#ff6615]">
-                AI-powered solutions that help businesses automate and grow.
+                scalable backend architectures.
               </span>
             </h1>
 
             {/* Rotating Word Pill */}
             <div className="flex flex-wrap items-center gap-2.5 text-xs sm:text-sm font-mono text-gray-400 pt-1">
-              <span>Specializing in:</span>
+              <span>Core Expertise:</span>
               <span className="inline-flex items-center px-3 py-1 rounded-lg bg-[#141825] border border-[#ff5500]/35 text-[#ff7722] font-semibold tracking-wide shadow-[0_0_12px_rgba(255,85,0,0.2)]">
                 <Sparkles className="w-3.5 h-3.5 mr-1.5 text-[#ff5500] animate-pulse" />
                 <span className={`transition-all duration-300 transform ${fade ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-1.5'}`}>
@@ -89,7 +89,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
 
             {/* Subheading */}
             <p className="text-base sm:text-lg text-gray-300 font-normal leading-relaxed max-w-2xl">
-              I build modern digital solutions that help businesses automate, grow, and work smarter.
+              Hi, I'm Anmol Sahoo. I build full-stack web applications, business software (CRMs, ERPs, Dashboards), and automated workflows with Python, Django, and React.
             </p>
 
             {/* Two CTA Buttons */}
@@ -106,7 +106,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
                 to="/contact"
                 className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-gradient-to-r from-[#ff5500] to-[#e63c00] hover:from-[#ff6715] hover:to-[#f0490f] text-sm font-semibold text-white shadow-[0_0_25px_rgba(255,85,0,0.45)] hover:shadow-[0_0_35px_rgba(255,85,0,0.65)] transition-all hover:scale-[1.02] active:scale-[0.98] group"
               >
-                <span>Let's Work Together</span>
+                <span>Get in Touch</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>

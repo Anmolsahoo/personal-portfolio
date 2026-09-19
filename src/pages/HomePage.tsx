@@ -2,14 +2,18 @@ import React, { useState } from 'react';
 import { Hero } from '../components/Hero';
 import { TechMarquee } from '../components/TechMarquee';
 import { BentoGrid } from '../components/BentoGrid';
-import { FeatureShowcase } from '../components/FeatureShowcase';
+import { ExperienceSection } from '../components/ExperienceSection';
+import { ProjectsGrid } from '../components/ProjectsGrid';
 import { PricingPlans } from '../components/PricingPlans';
 import { CtaSection } from '../components/CtaSection';
 import { ContactModal } from '../components/ContactModal';
+import { ProjectModal } from '../components/ProjectModal';
+import { ProjectItem } from '../data/portfolioData';
 
 export const HomePage: React.FC = () => {
   const [isContactOpen, setIsContactOpen] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState<string | undefined>(undefined);
+  const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(null);
 
   const handleOpenContact = (planName?: string) => {
     setSelectedPlan(planName);
@@ -18,19 +22,22 @@ export const HomePage: React.FC = () => {
 
   return (
     <div>
-      {/* Hero with Solar Flare & Dashboard Preview */}
+      {/* Hero with Profile & Skills Dashboard */}
       <Hero onOpenContact={() => handleOpenContact()} />
 
-      {/* Partner / Technologies Marquee */}
+      {/* Proven Tech Stack Marquee */}
       <TechMarquee />
 
-      {/* Bento Grid Architecture */}
+      {/* Technical Architecture Bento Grid */}
       <BentoGrid />
 
-      {/* Alternating Feature Showcase */}
-      <FeatureShowcase />
+      {/* Real Professional Experience Timeline */}
+      <ExperienceSection />
 
-      {/* Pricing / Engagement Tiers */}
+      {/* Featured Projects & In-Browser Interactive Demos */}
+      <ProjectsGrid onSelectProject={(project) => setSelectedProject(project)} />
+
+      {/* Freelance & Project Delivery Packages */}
       <PricingPlans onSelectPlan={(plan) => handleOpenContact(plan)} />
 
       {/* Bottom CTA Banner */}
@@ -41,6 +48,11 @@ export const HomePage: React.FC = () => {
         isOpen={isContactOpen}
         onClose={() => setIsContactOpen(false)}
         defaultPlan={selectedPlan}
+      />
+
+      <ProjectModal
+        project={selectedProject}
+        onClose={() => setSelectedProject(null)}
       />
     </div>
   );
